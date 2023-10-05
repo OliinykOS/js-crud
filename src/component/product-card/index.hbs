@@ -1,0 +1,15 @@
+{{#with data}}
+  <div class='card'>
+    <h4 class='card__title'>{{name}}</h4>
+    <p class='card__description'>{{description}}</p>
+    <div class='card__productId'>ID:
+      {{id}}</div>
+    <div class='card__footer'>
+      <div class='card__price'>{{price}}&#8372</div>
+      <a
+        class='card__editLink'
+        href='/product-edit?id={{id}}'
+      >Редагувати</a>
+    </div>
+  </div>
+{{/with}}

@@ -1,0 +1,26 @@
+.card {
+  padding: 16px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+.card__productId {
+  color: gray;
+}
+.card__footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.card__price {
+  font-size: 20px;
+  font-weight: bold;
+}
+.card__editLink {
+  color: blue;
+  text-decoration: none;
+}
+.card__editLink:hover {
+  opacity: 0.7;
+  text-decoration: underline;
+}
+
+/*# sourceMappingURL=style.css.map */
