@@ -12,6 +12,7 @@
     padding-bottom: s.space(1);
     border-bottom: 1px solid s.color('light');
   }
+
   &__content {
     display: grid;
     gap: s.space(6);
@@ -41,7 +42,7 @@ main {
   gap: s.space(10);
 }
 
-.user-list{
+.user-list {
   padding-right: 15px;
   padding-top: 5px;
   padding-bottom: 5px;

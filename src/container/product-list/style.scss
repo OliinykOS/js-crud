@@ -1,0 +1,52 @@
+@use '../../lib/service.scss' as s;
+.form {
+  display: flex;
+  flex-direction: column;
+
+  padding: s.space(4);
+  gap: s.space(8);
+
+  &__title {
+    font-size: 20px;
+    font-weight: bold;
+    padding-bottom: s.space(4);
+    color: blue;
+  }
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: s.space(10);
+}
+
+.product-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: s.space(6);
+}
+
+.card {
+  padding: s.space(4);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  &__productId {
+    color: gray;
+  }
+  &__footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__price {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  &__editLink {
+    color: blue;
+    text-decoration: none;
+  }
+  &__editLink:hover {
+    opacity: 0.7;
+    text-decoration: underline;
+  }
+}
