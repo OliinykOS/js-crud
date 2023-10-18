@@ -1,0 +1,13 @@
+.purchase-card-info {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.purchase-id {
+  color: #808080;
+  font-size: 16px;
+}
+
+/*# sourceMappingURL=style.css.map */

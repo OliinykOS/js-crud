@@ -1,0 +1,12 @@
+@use '../../lib/service.scss' as s;
+
+.purchase-card-info {
+  display: flex;
+  flex-direction: row;
+  gap: s.space(5);
+  justify-content: space-between;
+}
+.purchase-id {
+  color: #808080;
+  font-size: 16px;
+}

@@ -1,0 +1,9 @@
+<main class="main">
+  {{>heading title="Мої замовлення"}}
+  {{#with data}}          {{! беру данні index.js рядок 505, це є масив покупок отриманих отриманих функцією Purchase.getList()!}}
+    {{#each list}}        {{! прохожусь по кожному елементу масиву }}
+      {{>purchase-info-card data=this}} {{!передаю елемент масива (одна покупка - Purchase) в компонент purchase-info-card}}
+      {{>divider}}
+    {{/each}}
+  {{/with}}
+</main>
