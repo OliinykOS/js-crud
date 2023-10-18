@@ -1,19 +1,16 @@
 {{! 
 Це код container файлу для index сторінки, 
 в якому міститься код, котрий буде віддаватися по шляху (PATH) - "/"
- }}
+}}
+<main class="main">
+    {{> heading title="Товари" info="Комп'ютери та ноутбуки/Комп'ютери, неттопи, моноблоки"}}
 
-<div class='card'>
-  {{!block}}
-  <div class='card__header'>
-    {{!element}}
-    <h2 class='card__title'>{{data.message}}</h2>
-    <h3 class='card__subtitle'>{{data.info}}</h3>
-  </div>
-
-  <a href='{{data.link}}' class='card__button'>Повернутись
-    назад</a>
-</div>
+    <div class="product-list">
+        {{#each data.list}}
+            {{>purchase-product data=this}}
+        {{/each}}
+    </div>
+</main>
 
 {{! 
     Цей код містить лише те, що буде виводитись в <body>

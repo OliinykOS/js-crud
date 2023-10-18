@@ -1,0 +1,16 @@
+.field-text {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 100%;
+}
+.field-text__label {
+  font-size: 16px;
+  color: #343a40;
+}
+.field-text__value {
+  font-size: 16px;
+  color: black;
+}
+
+/*# sourceMappingURL=style.css.map */

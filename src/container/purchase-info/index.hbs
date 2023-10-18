@@ -1,0 +1,33 @@
+<main class="main">
+  {{#with data.purchase}}
+    <form method="GET" action="/purchase-edit-info={{id}} " class="form-card">
+    {{>heading title="Інформація про замовлення"}}
+
+    {{>field-text label = 'ID:' value=`{{id}}`}}
+
+    {{>divider}}
+
+    {{>field-text label = "Ім'я:" value=`{{firstname}}`}}
+    {{>field-text label = "Прізвище:" value=`{{lastname}}`}}
+    {{>field-text label = "Телефон:" value=`{{phone}}`}}
+    {{>field-text label = "Електронна пошта:" value=`{{email}}`}}
+
+    {{>divider}}
+
+    {{>field-text label = "Назва товару:" value=`{{product.title}}`}}
+    {{>field-text label = "Коментар:" value=`{{comment}}`}}
+
+    {{>divider}}
+
+    {{>field-text label = "Вартість товарів:" value=`{{productPrice}}`}}
+    {{>field-text label = "Вартість доставки:" value=`{{deliveryPrice}}`}}
+    {{>field-text label = "Сума до сплати:" value=`{{totalPrice}}`}}
+    {{>field-text label = "Нараховані бонуси:" value=`{{bonus}}`}}
+
+  {{>divider}}
+
+  {{>button text="Змінити дані"}}
+
+  </form>
+  {{/with}}
+</main>

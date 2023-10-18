@@ -1,0 +1,9 @@
+{{#with data}}          {{! отримаю елемент (покупку Purchase) для відображення короткої інформаційної картки}}
+  <div method="GET" action="/purchase-info?id={{id}} " class='purchase-card-info'>
+    <div class='purchase-id'>ID: {{id}}</div>                             {{! вивожу id покупки}}
+    {{>field-text label="Товари" value=`{{product.title}}`}}              {{! вивожу назву продукта в покупці}}
+    {{>field-text label="Сума замовлення" value=`{{totalPrice}}`}}        {{! вивожу заагальну вартість покупки}}
+    {{>field-text label="Нараховані бонуси" value=`{{bonus}}`}}           {{! вивожу нараховані юонуси}}
+  </div>
+{{/with}}
+
